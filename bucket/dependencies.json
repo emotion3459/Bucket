@@ -1,16 +1,16 @@
 {
-    "version": "2.1.0",
+    "version": "2.2.0",
     "description": "A rewrite of the old legacy software 'depends.exe' in C# for Windows devs to troubleshoot dll load dependencies issues.",
     "homepage": "https://github.com/himeshsameera/Dependencies",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/himeshsameera/Dependencies/releases/download/v2.1.0/Dependencies_v2.1.0_x64.zip",
-            "hash": "a4c7274071768d2cbaa65c909b61f9544f316c39f86f2ad459bb7368c20b9670"
+            "url": "https://github.com/himeshsameera/Dependencies/releases/download/v2.2.0/Dependencies_v2.2.0_x64.zip",
+            "hash": "b0de0c7ab52e8b4f5098573319728070b52050bddf4cc350bb412396ec27be11"
         },
         "32bit": {
-            "url": "https://github.com/himeshsameera/Dependencies/releases/download/v2.1.0/Dependencies_v2.1.0_x86.zip",
-            "hash": "ebde60c00afb3bc571412157ab8e57d0d31f97e2d3ba4cae7f34231b6ea70b81"
+            "url": "https://github.com/himeshsameera/Dependencies/releases/download/v2.2.0/Dependencies_v2.2.0_x86.zip",
+            "hash": "278b5c53f4528ef6b6def156232d8f34b6a607ba5e6092e08f64f4cdd4e8461e"
         }
     },
     "shortcuts": [
