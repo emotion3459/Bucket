@@ -1,0 +1,40 @@
+{
+    "version": "1.0.0.82",
+    "description": "DGDemux is a standalone demuxer for BluRay/UHD disks.",
+    "homepage": "https://www.rationalqm.us/dgdemux/dgdemux.html",
+    "license": "Freeware",
+    "url": "https://www.videohelp.com/download/DGDemux_1.0.0.82.zip",
+    "hash": "1918415843bb0a5546e986d815b9c8d7cc2feb847de57a96d864bef36d201822",
+    "suggest": {
+        "dovi-tool": "extras/dovi-tool"
+    },
+    "bin": [
+        "DGDemux.exe",
+        "DGMVCCombine.exe"
+    ],
+    "shortcuts": [
+        [
+            "DGDemuxGUI.exe",
+            "DGDemux/DGDemuxGUI"
+        ],
+        [
+            "DGDemuxGUI_Files.exe",
+            "DGDemux/DGDemuxGUI Files"
+        ]
+    ],
+    "pre_install": [
+        "Expand-Archive \"$dir\\thdmerge_*.zip\" \"$dir\"",
+        "\"finished.wav\", \"dovi_tool.exe\", \"dovi_tool.txt\", \"MediaInfoCLI.exe\", \"MediaInfoCLI.txt\", \"thdmerge_*.zip\", \"thdmerge.cpp\" | ForEach-Object { $file = \"$dir\\$_\"; Remove-Item $file }"
+    ],
+    "persist": [
+        "DGDemux.ini",
+        "DGDemux_Files.ini"
+    ],
+    "checkver": {
+        "url": "https://www.videohelp.com/software/DGDemux",
+        "regex": "DGDemux_([\\d.]+).zip"
+    },
+    "autoupdate": {
+        "url": "https://www.videohelp.com/download/DGDemux_$version.zip"
+    }
+}
