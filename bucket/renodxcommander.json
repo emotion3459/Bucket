@@ -12,7 +12,10 @@
         ]
     ],
     "innosetup": true,
-    "checkver": "github",
+    "checkver": {
+        "url": "https://github.com/RankFTW/RenoDXChecker/releases/tag/RDXC",
+        "regex": ">v([\\d.]+)<"
+    },
     "autoupdate": {
         "url": "https://github.com/RankFTW/RenoDXChecker/releases/download/RDXC/RDXC-Setup.exe"
     }
