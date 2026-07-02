@@ -13,11 +13,11 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/zhongfly/mpv-winbuild/releases/download/2026-07-01-99b4c12ccc/mpv-x86_64-20260701-git-99b4c12ccc.7z",
-            "hash": "e42ebf0b47e8e1c4b3643c3661d4a3ab45f8047df8934303054c48eeca94ac49"
+            "hash": "98a7886682769ec65cd9d3e4d5b48c35b1b5374b5f39d427b3356bd633791e95"
         },
         "arm64": {
             "url": "https://github.com/zhongfly/mpv-winbuild/releases/download/2026-07-01-99b4c12ccc/mpv-aarch64-20260701-git-99b4c12ccc.7z",
-            "hash": "2b70893f4add8b113166e45ff45512d4b354276cb5977e5b9927bd954541d43c"
+            "hash": "047e4653c8b56d6b3f15f7a436638d005ef9cbcb4009770b8dd73f4cc37e6d3a"
         }
     },
     "pre_install": "'updater.bat', 'installer' | ForEach-Object { Remove-Item \"$dir\\$_\" -Recurse }",
